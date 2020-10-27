@@ -13,6 +13,12 @@
 		52C100DF2510D8CC00372FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C100DD2510D8CC00372FE6 /* Main.storyboard */; };
 		52C100E12510D8CE00372FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C100E02510D8CE00372FE6 /* Assets.xcassets */; };
 		52C100E42510D8CE00372FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C100E22510D8CE00372FE6 /* LaunchScreen.storyboard */; };
+		52C100F02510D93700372FE6 /* PopulerGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C100EF2510D93700372FE6 /* PopulerGame.swift */; };
+		52C100F22510D94500372FE6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C100F12510D94500372FE6 /* Game.swift */; };
+		52C100F52510D9B600372FE6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C100F32510D9B600372FE6 /* DetailViewController.swift */; };
+		52C100F62510D9B600372FE6 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C100F42510D9B600372FE6 /* DetailViewController.xib */; };
+		52C100F92510D9CE00372FE6 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C100F72510D9CE00372FE6 /* GameTableViewCell.swift */; };
+		52C100FA2510D9CE00372FE6 /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C100F82510D9CE00372FE6 /* GameTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		52C100E02510D8CE00372FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52C100E32510D8CE00372FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52C100E52510D8CE00372FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C100EF2510D93700372FE6 /* PopulerGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulerGame.swift; sourceTree = "<group>"; };
+		52C100F12510D94500372FE6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		52C100F32510D9B600372FE6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		52C100F42510D9B600372FE6 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		52C100F72510D9CE00372FE6 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		52C100F82510D9CE00372FE6 /* GameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		52C100D62510D8CC00372FE6 /* GamePC */ = {
 			isa = PBXGroup;
 			children = (
-				52C100D72510D8CC00372FE6 /* AppDelegate.swift */,
-				52C100D92510D8CC00372FE6 /* SceneDelegate.swift */,
-				52C100DB2510D8CC00372FE6 /* ViewController.swift */,
-				52C100DD2510D8CC00372FE6 /* Main.storyboard */,
+				52C100EE2510D90300372FE6 /* Base */,
+				52C100ED2510D8F500372FE6 /* Model */,
+				52C100EC2510D8EB00372FE6 /* Controller */,
+				52C100EB2510D8DB00372FE6 /* View */,
 				52C100E02510D8CE00372FE6 /* Assets.xcassets */,
-				52C100E22510D8CE00372FE6 /* LaunchScreen.storyboard */,
 				52C100E52510D8CE00372FE6 /* Info.plist */,
 			);
 			path = GamePC;
+			sourceTree = "<group>";
+		};
+		52C100EB2510D8DB00372FE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52C100F42510D9B600372FE6 /* DetailViewController.xib */,
+				52C100F82510D9CE00372FE6 /* GameTableViewCell.xib */,
+				52C100DD2510D8CC00372FE6 /* Main.storyboard */,
+				52C100E22510D8CE00372FE6 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		52C100EC2510D8EB00372FE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52C100F32510D9B600372FE6 /* DetailViewController.swift */,
+				52C100F72510D9CE00372FE6 /* GameTableViewCell.swift */,
+				52C100DB2510D8CC00372FE6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52C100ED2510D8F500372FE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52C100EF2510D93700372FE6 /* PopulerGame.swift */,
+				52C100F12510D94500372FE6 /* Game.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		52C100EE2510D90300372FE6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				52C100D72510D8CC00372FE6 /* AppDelegate.swift */,
+				52C100D92510D8CC00372FE6 /* SceneDelegate.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,7 +144,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Dicoding Indonesia";
 				TargetAttributes = {
 					52C100D32510D8CC00372FE6 = {
@@ -126,8 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				52C100E42510D8CE00372FE6 /* LaunchScreen.storyboard in Resources */,
+				52C100FA2510D9CE00372FE6 /* GameTableViewCell.xib in Resources */,
 				52C100E12510D8CE00372FE6 /* Assets.xcassets in Resources */,
 				52C100DF2510D8CC00372FE6 /* Main.storyboard in Resources */,
+				52C100F62510D9B600372FE6 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C100F92510D9CE00372FE6 /* GameTableViewCell.swift in Sources */,
 				52C100DC2510D8CC00372FE6 /* ViewController.swift in Sources */,
+				52C100F22510D94500372FE6 /* Game.swift in Sources */,
+				52C100F02510D93700372FE6 /* PopulerGame.swift in Sources */,
+				52C100F52510D9B600372FE6 /* DetailViewController.swift in Sources */,
 				52C100D82510D8CC00372FE6 /* AppDelegate.swift in Sources */,
 				52C100DA2510D8CC00372FE6 /* SceneDelegate.swift in Sources */,
 			);
@@ -192,6 +248,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -252,6 +309,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
